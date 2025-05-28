@@ -16,6 +16,16 @@ app.use(
 );
 app.use(express.json());
 
+// Default route to check if server is running
+app.get("/", (req, res) => {
+  res.json({
+    status: "success",
+    message: "Gujarat Business Finder API is running",
+    timestamp: new Date().toISOString(),
+    version: "1.0.0",
+  });
+});
+
 // Proxy endpoint for SerpAPI
 app.get("/api/search", async (req, res) => {
   try {

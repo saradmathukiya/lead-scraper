@@ -1,4 +1,4 @@
-# Gujarat Business Finder
+# Lead Scraper
 
 A web application that helps find cafes, schools, and restaurants in Surat, Vadodara, and Ahmedabad using SerpAPI (Google Search API).
 
